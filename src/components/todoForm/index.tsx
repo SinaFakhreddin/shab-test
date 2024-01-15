@@ -68,7 +68,7 @@ const TodoForm = () => {
           <div className={"flex items-center justify-center w-1/4"}>
             <input
               name={"endTime"}
-              value={todo?.endTime as any}
+              value={todo?.endTime as string}
               onChange={changeTodoHandler}
               placeholder={"end Todo..."}
               className={
