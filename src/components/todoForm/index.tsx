@@ -55,11 +55,11 @@ const TodoForm = () => {
           <div className={"flex items-center justify-center w-1/4"}>
             <input
               name={"startTime"}
-              value={todo?.startTime as any}
+              value={todo?.startTime as string}
               onChange={changeTodoHandler}
               placeholder={"start Todo..."}
               className={
-                "px-4 outline-none hover:cursor-pointer placeholder-blue-500"
+                "p-0 outline-none hover:cursor-pointer placeholder-blue-500 "
               }
               type="date"
             />
@@ -72,7 +72,7 @@ const TodoForm = () => {
               onChange={changeTodoHandler}
               placeholder={"end Todo..."}
               className={
-                "px-4 outline-none hover:cursor-pointer placeholder-blue-500"
+                "p-0 outline-none hover:cursor-pointer placeholder-blue-500"
               }
               type="date"
             />
